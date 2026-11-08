@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dinda Febiola Rachmawati | Portofolio</title>
+<meta name="description" content="Portofolio Dinda Febiola Rachmawati, mahasiswa D4 Teknik Informatika Politeknik Negeri Jember. Software engineer in the making.">
+<meta name="theme-color" content="#FFF3E6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%23FF7A45'/%3E%3Ctext x='50' y='70' font-size='64' font-family='Arial Black' text-anchor='middle' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#beranda" aria-label="Kembali ke atas">dinda<span>.</span></a>
+  <nav class="links" id="navLinks" aria-label="Navigasi utama">
+    <a href="#tentang">Tentang</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#perjalanan">Perjalanan</a>
+    <a href="#kepanitiaan">Kegiatan</a>
+    <a href="#sertifikat">Sertifikat</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+  <a class="btn btn-solid nav-cta" href="#kontak">Hubungi saya <i>↗</i></a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div><div class="shape s4"></div>
+    <div class="hero-stage">
+      <p class="hello" id="hello">Halo, saya</p>
+      <h1 class="bigname" id="bigname" aria-label="Dinda Febiola Rachmawati">DINDA</h1>
+      <div class="hero-slider" id="heroSlider" role="region" aria-label="Foto Dinda, geser untuk melihat foto lain"><div class="hs-frame" id="hsFrame"></div><div class="hs-dots" id="hsDots"></div></div>
+      <div class="hero-left">
+        <p class="kicker" id="heroRole"></p>
+        <h2 class="hero-tag" id="heroTag"></h2>
+        <div class="row">
+          <a class="btn btn-solid" href="#proyek">Lihat proyek <i>↘</i></a>
+          <a class="btn btn-ghost" id="cvBtn" href="#" target="_blank" rel="noopener">Unduh CV</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <p id="heroCardText"></p>
+          <div class="chips"><span class="chip">Nganjuk</span><span class="chip">Open to learn</span></div>
+        </div>
+        <p class="tap-hint">Ketuk fotoku ✦ dan geser!</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <!-- TENTANG -->
+  <section class="sec" id="tentang">
+    <div class="wrap about">
+      <div class="reveal">
+        <p class="eyebrow">✦ Tentang saya</p>
+        <h2 class="title" id="aboutTitle"></h2>
+      </div>
+      <div class="about-body reveal">
+        <div id="aboutText"></div>
+        <div class="facts" id="facts"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section class="sec tint" id="keahlian">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">✦ Keahlian</p>
+        <h2 class="title">Alat yang kupakai<br>untuk membangun.</h2>
+      </div>
+      <div class="skills" id="skills"></div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section class="sec" id="proyek">
+    <div class="wrap head-row reveal">
+      <div>
+        <p class="eyebrow">✦ Proyek pilihan</p>
+        <h2 class="title">Karya yang kukerjakan<br>bersama tim.</h2>
+      </div>
+      <div class="tr-ctrl" data-for="trProyek"><span class="swipe-hint">geser ⟷</span><button class="arrow prev" aria-label="Sebelumnya">←</button><button class="arrow next" aria-label="Berikutnya">→</button></div>
+    </div>
+    <div class="track" id="trProyek"></div>
+    <div class="tr-bar"><i id="barProyek"></i></div>
+  </section>
+
+  <!-- PERJALANAN -->
+  <section class="sec tint" id="perjalanan">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">✦ Perjalanan</p>
+        <h2 class="title">Cerita<br>perjalananku.</h2>
+      </div>
+      <div class="stack" id="stack"></div>
+    </div>
+  </section>
+
+  <!-- KEPANITIAAN -->
+  <section class="sec" id="kepanitiaan">
+    <div class="wrap head-row reveal">
+      <div>
+        <p class="eyebrow">✦ Kontribusi</p>
+        <h2 class="title">Organisasi &amp;<br>kepanitiaan.</h2>
+      </div>
+      <div class="tr-ctrl" data-for="trPanitia"><span class="swipe-hint">geser ⟷</span><button class="arrow prev" aria-label="Sebelumnya">←</button><button class="arrow next" aria-label="Berikutnya">→</button></div>
+    </div>
+    <div class="track" id="trPanitia"></div>
+    <div class="tr-bar"><i id="barPanitia"></i></div>
+  </section>
+
+  <!-- SERTIFIKAT -->
+  <section class="sec tint" id="sertifikat">
+    <div class="wrap head-row reveal">
+      <div>
+        <p class="eyebrow">✦ Sertifikat</p>
+        <h2 class="title">Bukti belajar<br>dan berproses.</h2>
+      </div>
+      <div class="tr-ctrl" data-for="trSert"><span class="swipe-hint">geser ⟷</span><button class="arrow prev" aria-label="Sebelumnya">←</button><button class="arrow next" aria-label="Berikutnya">→</button></div>
+    </div>
+    <div class="track" id="trSert"></div>
+    <div class="tr-bar"><i id="barSert"></i></div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="sec" id="kontak">
+    <div class="wrap">
+      <div class="contact reveal">
+        <p class="eyebrow light">✦ Kontak</p>
+        <h2 class="title light">Yuk, ngobrol<br>dan berkolaborasi!</h2>
+        <p class="contact-sub" id="contactSub"></p>
+        <div class="row wrapped" id="contactBtns"></div>
+        <p class="soc-label">Sosial media</p>
+        <div class="row wrapped" id="socialBtns"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><p id="footText"></p><a href="#beranda">Kembali ke atas ↑</a></footer>
+
+<div id="layer"></div>
+<noscript><p style="padding:2rem;text-align:center">Aktifkan JavaScript untuk melihat portofolio ini.</p></noscript>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
